@@ -1582,10 +1582,10 @@ NextERateFish:
 
             Else
                 Alpha(Stk) = StkERRateTilde(Stk) / StkERRate(Stk)
-                c1 = (1 - StkERRate(Stk))
-                c2 = (1 - StkERRate(Stk)) ^ Alpha(Stk)
-                c3 = c1 ^ Alpha(Stk)
-                c4 = 1 - c3
+                c1 = (1 - StkERRate(Stk))  ' unused?
+                c2 = (1 - StkERRate(Stk)) ^ Alpha(Stk) ' unused?
+                c3 = c1 ^ Alpha(Stk) 'unused?
+                c4 = 1 - c3 'unused?
                 Meeew(Stk) = 1 - ((1 - StkERRate(Stk)) ^ Alpha(Stk))
             End If
         Next
