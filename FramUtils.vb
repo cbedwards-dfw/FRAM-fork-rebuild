@@ -2486,8 +2486,8 @@ SkipFMSP:
       ReDim TaaEtrsType(100)
       ReDim TaaEtrsName(100)
 
-      '- Text File Reader
-      Dim TAAReader As New Microsoft.VisualBasic.FileIO.TextFieldParser(FVSdatabasepath & "\TaaEtrsNum.txt")
+        '- Text File Reader
+        Dim TAAReader As New Microsoft.VisualBasic.FileIO.TextFieldParser(FVSdatabasepath & "\TaaEtrsNum.txt")
       TAAReader.TextFieldType = FileIO.FieldType.Delimited
       TAAReader.SetDelimiters(",", " ")
 

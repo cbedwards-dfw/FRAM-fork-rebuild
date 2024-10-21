@@ -34,7 +34,8 @@ Module FramOutput
         CmdStr = "SELECT * FROM ReportDriver WHERE DriverName = " & Chr(34) & ReportDriverName.ToString & Chr(34) & " ORDER BY DriverName,ReportNumber,Option1,Option2,Option3,Option4,Option5,Option6"
 SortTermRun:
         Dim RDcm As New OleDb.OleDbCommand(CmdStr, FramDB)
-        Dim ReportDA As New System.Data.OleDb.OleDbDataAdapter
+        Dim ReportDA As New System.Data.OleDb.OleDbDa
+        dapter
         ReportDA.SelectCommand = RDcm
         Dim RDcb As New OleDb.OleDbCommandBuilder
         RDcb = New OleDb.OleDbCommandBuilder(ReportDA)
